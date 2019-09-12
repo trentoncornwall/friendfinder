@@ -8,4 +8,7 @@ module.exports = app => {
 	app.get("/find", (req, res) => {
 		res.sendFile(path.join(__dirname, "../public/survey.html"));
 	});
+	app.get("/script", (req, res) => {
+		res.sendFile(path.join(__dirname, "../public/script.js"));
+	});
 };
