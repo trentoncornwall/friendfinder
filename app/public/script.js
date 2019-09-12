@@ -18,6 +18,27 @@ $("#find").on("click", event => {
 	let eight = $("#eight").val();
 	let nine = $("#nine").val();
 	let ten = $("#ten").val();
+
+	//form validation before sending it
+	// if (
+	// 	!name ||
+	// 	!gender ||
+	// 	!pref ||
+	// 	!photo ||
+	// 	!one ||
+	// 	!two ||
+	// 	!three ||
+	// 	!four ||
+	// 	!five ||
+	// 	!six ||
+	// 	!seven ||
+	// 	!eight ||
+	// 	!nine ||
+	// 	!ten
+	// ) {
+	// 	console.log("incomplete form");
+	// 	return false;
+	// }
 	const data = {
 		name: name,
 		photo: photo,
@@ -26,5 +47,8 @@ $("#find").on("click", event => {
 		photo: photo,
 		scores: [one, two, three, four, five, six, seven, eight, nine, ten]
 	};
-	$.post("/api/friends", (err, res) => {});
+	console.log(data);
+	$.post("/api/friends", data, (err, res) => {
+		if (err) throw err;
+	});
 });

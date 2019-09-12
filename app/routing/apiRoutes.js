@@ -5,6 +5,6 @@ module.exports = app => {
 		console.log(data);
 	});
 	app.post("/api/friends", (req, res) => {
-		console.log("post request");
+		console.log(json(req.body));
 	});
 };
