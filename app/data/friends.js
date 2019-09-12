@@ -4,7 +4,7 @@ module.exports = [
 		gender: "male",
 		prefrence: "female",
 		photo: "https://publicdomainvectors.org/photos/ProfilePlaceholderSuit.png",
-		scores: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
+		scores: [1, 3, 4, 5, 5, 1, 2, 5, 3, 1]
 	},
 	{
 		name: "Jen",
