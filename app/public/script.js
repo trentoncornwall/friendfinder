@@ -58,9 +58,11 @@ $("#find").on("click", event => {
 		$(".matchphoto").attr("src", res.photo);
 
 		// modal exposure and x button
+		let modalc = document.querySelector(".modal-content");
 		let modal = document.querySelector(".modal");
 		let closeBtn = document.querySelector(".close-btn");
 		modal.style.display = "block";
+		modalc.style.display = "block";
 		closeBtn.onclick = function() {
 			modal.style.display = "none";
 		};

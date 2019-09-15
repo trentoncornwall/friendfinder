@@ -13,244 +13,243 @@
 		<title>finder</title>
 	</head>
 	<body>
-		<nav>
-			<div class="logo">
-				<p>friendFinder</p>
-			</div>
-			<div class="nav">
+		<header>
+			<nav>
 				<ul>
+					<li>
+						'friend' Finder
+					</li>
 					<li>
 						<a href="/">home</a>
 					</li>
 					<li>
-						<a href="/find">find</a>
+						<a active href="/find">find</a>
 					</li>
 				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<div class="form" name="finder">
+				<form class="findform">
+					<h2 class="header">Find 'Friend'</h2>
+					<hr />
+					<div class="name">
+						<label for="name">Name:</label>
+						<input type="text" name="name" id="name" required />
+					</div>
+					<div class="geneders">
+						<label for="gender">Gender:</label>
+						<select name="gender" id="gender" required>
+							<option value="" selected>Select</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+							<option value="other">Other</option>
+						</select>
+						<label for="pref">Prefrence:</label>
+						<select name="pref" id="pref" required>
+							<option value="" selected>Select</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+					<div class="photo">
+						<label for="photo">Photo URL:</label>
+						<input type="input" name="photo" id="photo" required />
+					</div>
+					<div class="rankings">
+						<div class="question">
+							<!-- <h3>Question 1</h3> -->
+							<label for="one">
+								Your mind is always buzzing with unexplored ideas and plans.
+							</label>
+
+							<div class="options">
+								<select name="one" id="one" required>
+									<option value="" selected>Select</option>
+									<option value="1">1 (strongly disagree) </option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (stronly agree) </option>
+								</select>
+							</div>
+						</div>
+						<div class="question">
+							<!-- <h3>Question 2</h3> -->
+							<label for="two">
+								Generally speaking, you rely more on your experience than your
+								imagination.
+							</label>
+
+							<div class="options">
+								<select name="two" id="two" required>
+									<option value="" selected>Select</option>
+									<option value="1">1 (strongly disagree) </option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (stronly agree) </option>
+								</select>
+							</div>
+						</div>
+						<div class="question">
+							<!-- <h3>Question 3</h3> -->
+							<label for="three">
+								You find it easy to stay relaxed and focused even when there is
+								some pressure.
+							</label>
+
+							<div class="options">
+								<select name="three" id="three" required>
+									<option value="" selected>Select</option>
+									<option value="1">1 (strongly disagree) </option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (stronly agree) </option>
+								</select>
+							</div>
+						</div>
+						<div class="question">
+							<!-- <h3>Question 4</h3> -->
+							<label for="four">
+								People can rarely upset you.
+							</label>
+
+							<div class="options">
+								<select name="four" id="four" required>
+									<option value="" selected>Select</option>
+									<option value="1">1 (strongly disagree) </option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (stronly agree) </option>
+								</select>
+							</div>
+						</div>
+						<div class="question">
+							<!-- <h3>Question 5</h3> -->
+							<label for="five">
+								You rarely do something just out of sheer curiosity.
+							</label>
+
+							<div class="options">
+								<select name="five" id="five" required>
+									<option value="" selected>Select</option>
+									<option value="1">1 (strongly disagree) </option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (stronly agree) </option>
+								</select>
+							</div>
+						</div>
+						<div class="question">
+							<!-- <h3>Question 6</h3> -->
+							<label for="six">
+								It is often difficult for you to relate to other people’s
+								feelings.
+							</label>
+
+							<div class="options">
+								<select name="six" id="six" required>
+									<option value="" selected>Select</option>
+									<option value="1">1 (strongly disagree) </option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (stronly agree) </option>
+								</select>
+							</div>
+							<div class="question">
+								<!-- <h3>Question 7</h3> -->
+								<label for="seven">
+									In a discussion, truth should be more important than people’s
+									sensitivities.
+								</label>
+
+								<div class="options">
+									<select name="seven" id="seven" required>
+										<option value="" selected>Select</option>
+										<option value="1">1 (strongly disagree) </option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5 (stronly agree) </option>
+									</select>
+								</div>
+							</div>
+							<div class="question">
+								<!-- <h3>Question 8</h3> -->
+								<label for="eight">
+									You rarely get carried away by fantasies and ideas.
+								</label>
+
+								<div class="options">
+									<select name="eight" id="eight" required>
+										<option value="" selected>Select</option>
+										<option value="1">1 (strongly disagree) </option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5 (stronly agree) </option>
+									</select>
+								</div>
+							</div>
+							<div class="question">
+								<!-- <h3>Question 9</h3> -->
+								<label for="nine">
+									You think that everyone’s views should be respected regardless
+									of whether they are supported by facts or not.
+								</label>
+
+								<div class="options">
+									<select name="nine" id="nine" required>
+										<option value="" selected>Select</option>
+										<option value="1">1 (strongly disagree) </option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5 (stronly agree) </option>
+									</select>
+								</div>
+							</div>
+							<div class="question">
+								<!-- <h3>Question 10</h3> -->
+								<label for="ten">
+									You feel more energetic after spending time with a group of
+									people.
+								</label>
+
+								<div class="options">
+									<select name="ten" id="ten" required>
+										<option value="" selected>Select</option>
+										<option value="1">1 (strongly disagree) </option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5 (stronly agree) </option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="button">
+						<button id="find">Find</button>
+					</div>
+				</form>
 			</div>
-		</nav>
-		<div class="header">
-			<p>
-				find
-			</p>
-		</div>
-		<div class="form" name="finder">
-			<form class="findform">
-				<h2>Find 'Friend'</h2>
-				<hr />
-				<div class="name">
-					<label for="name">Name:</label>
-					<input type="text" name="name" id="name" required />
+			<div class="modal">
+				<div class="modal-content">
+					<span class="close-btn">&times;</span>
+					<h2 class="matchname"></h2>
+					<img class="matchphoto" src="" alt="" srcset="" />
 				</div>
-				<div class="geneders">
-					<label for="gender">Gender:</label>
-					<select name="gender" id="gender" required>
-						<option value="" selected>Select</option>
-						<option value="male">Male</option>
-						<option value="female">Female</option>
-						<option value="other">Other</option>
-					</select>
-					<label for="pref">Prefrence:</label>
-					<select name="pref" id="pref" required>
-						<option value="" selected>Select</option>
-						<option value="male">Male</option>
-						<option value="female">Female</option>
-						<option value="other">Other</option>
-					</select>
-				</div>
-				<div class="photo">
-					<label for="photo">Photo URL:</label>
-					<input type="input" name="photo" id="photo" required />
-				</div>
-				<div class="rankings">
-					<div class="question">
-						<h3>Question 1</h3>
-						<label for="one">
-							Your mind is always buzzing with unexplored ideas and plans.
-						</label>
-
-						<div class="options">
-							<select name="one" id="one" required>
-								<option value="" selected>Select</option>
-								<option value="1">1 (strongly disagree) </option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (stronly agree) </option>
-							</select>
-						</div>
-					</div>
-					<div class="question">
-						<h3>Question 2</h3>
-						<label for="two">
-							Generally speaking, you rely more on your experience than your
-							imagination.
-						</label>
-
-						<div class="options">
-							<select name="two" id="two" required>
-								<option value="" selected>Select</option>
-								<option value="1">1 (strongly disagree) </option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (stronly agree) </option>
-							</select>
-						</div>
-					</div>
-					<div class="question">
-						<h3>Question 3</h3>
-						<label for="three">
-							You find it easy to stay relaxed and focused even when there is
-							some pressure.
-						</label>
-
-						<div class="options">
-							<select name="three" id="three" required>
-								<option value="" selected>Select</option>
-								<option value="1">1 (strongly disagree) </option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (stronly agree) </option>
-							</select>
-						</div>
-					</div>
-					<div class="question">
-						<h3>Question 4</h3>
-						<label for="four">
-							People can rarely upset you.
-						</label>
-
-						<div class="options">
-							<select name="four" id="four" required>
-								<option value="" selected>Select</option>
-								<option value="1">1 (strongly disagree) </option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (stronly agree) </option>
-							</select>
-						</div>
-					</div>
-					<div class="question">
-						<h3>Question 5</h3>
-						<label for="five">
-							You rarely do something just out of sheer curiosity.
-						</label>
-
-						<div class="options">
-							<select name="five" id="five" required>
-								<option value="" selected>Select</option>
-								<option value="1">1 (strongly disagree) </option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (stronly agree) </option>
-							</select>
-						</div>
-					</div>
-					<div class="question">
-						<h3>Question 6</h3>
-						<label for="six">
-							It is often difficult for you to relate to other people’s
-							feelings.
-						</label>
-
-						<div class="options">
-							<select name="six" id="six" required>
-								<option value="" selected>Select</option>
-								<option value="1">1 (strongly disagree) </option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (stronly agree) </option>
-							</select>
-						</div>
-						<div class="question">
-							<h3>Question 7</h3>
-							<label for="seven">
-								In a discussion, truth should be more important than people’s
-								sensitivities.
-							</label>
-
-							<div class="options">
-								<select name="seven" id="seven" required>
-									<option value="" selected>Select</option>
-									<option value="1">1 (strongly disagree) </option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5 (stronly agree) </option>
-								</select>
-							</div>
-						</div>
-						<div class="question">
-							<h3>Question 8</h3>
-							<label for="eight">
-								You rarely get carried away by fantasies and ideas.
-							</label>
-
-							<div class="options">
-								<select name="eight" id="eight" required>
-									<option value="" selected>Select</option>
-									<option value="1">1 (strongly disagree) </option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5 (stronly agree) </option>
-								</select>
-							</div>
-						</div>
-						<div class="question">
-							<h3>Question 9</h3>
-							<label for="nine">
-								You think that everyone’s views should be respected regardless
-								of whether they are supported by facts or not.
-							</label>
-
-							<div class="options">
-								<select name="nine" id="nine" required>
-									<option value="" selected>Select</option>
-									<option value="1">1 (strongly disagree) </option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5 (stronly agree) </option>
-								</select>
-							</div>
-						</div>
-						<div class="question">
-							<h3>Question 10</h3>
-							<label for="ten">
-								You feel more energetic after spending time with a group of
-								people.
-							</label>
-
-							<div class="options">
-								<select name="ten" id="ten" required>
-									<option value="" selected>Select</option>
-									<option value="1">1 (strongly disagree) </option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5 (stronly agree) </option>
-								</select>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="button">
-					<button id="find">Find</button>
-				</div>
-			</form>
-		</div>
-		<div class="modal">
-			<div class="modal-content">
-				<span class="close-btn">&times;</span>
-				<h2 class="matchname"></h2>
-				<img class="matchphoto" src="" alt="" srcset="" />
 			</div>
-		</div>
+		</main>
+
 		<script src="/script.js"></script>
 	</body>
 </html>
