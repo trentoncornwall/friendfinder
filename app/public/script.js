@@ -47,8 +47,38 @@ $("#find").on("click", event => {
 		photo: photo,
 		scores: [one, two, three, four, five, six, seven, eight, nine, ten]
 	};
-	console.log(data);
-	$.post("/api/friends", data, (err, res) => {
-		if (err) throw err;
+	// console.log(data);
+	// $.post("/api/friends", data, (err, res) => {
+	// 	if (err) throw err;
+
+	// });
+
+	function matched(res) {
+		$(".matchname").text(res.name);
+		$(".matchphoto").attr("src", res.photo);
+
+		// modal exposure and x button
+		let modal = document.querySelector(".modal");
+		let closeBtn = document.querySelector(".close-btn");
+		modal.style.display = "block";
+		closeBtn.onclick = function() {
+			modal.style.display = "none";
+		};
+		window.onclick = function(e) {
+			if (e.target == modal) {
+				modal.style.display = "none";
+			}
+		};
+	}
+
+	$.ajax({
+		url: "/api/friends",
+		data: data,
+		dataType: "json",
+		type: "post",
+		success: function(res) {
+			matched(res);
+			console.log(res);
+		}
 	});
 });

@@ -2,7 +2,7 @@ module.exports = [
 	{
 		name: "David",
 		gender: "male",
-		prefrence: "female",
+		preference: "female",
 		photo: "https://publicdomainvectors.org/photos/ProfilePlaceholderSuit.png",
 		scores: [1, 3, 4, 5, 5, 1, 2, 5, 3, 1]
 	},
